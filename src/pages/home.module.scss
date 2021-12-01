@@ -1,0 +1,76 @@
+.container {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.posts {
+    margin: 1rem auto 0;
+
+    a {
+        display: block;
+        color: var(--heading);
+        transition: color .2s;
+
+        & + a {
+            margin-top: 2rem;
+        }
+
+        &:hover {
+            color: var(--highlight);
+        }
+
+        strong {
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+
+        p {
+            color: var(--body);
+            font-size: 1rem;
+            font-weight: 400;
+
+            padding: .4rem 0 1rem 0;
+        }
+
+        div {
+            display: flex;
+
+            time {
+                color: var(--info);
+                font-size: 0.875rem;
+                display: flex;
+                align-items: center;
+                margin-right: 1.5rem;
+
+                svg {
+                    margin-right: 0.3rem;
+                }
+            }
+
+            span {
+                color: var(--info);
+                font-size: 0.875rem;
+                display: flex;
+                align-items: center;
+
+                svg {
+                    margin-right: 0.3rem;
+                }
+            }
+        }
+    }
+}
+
+.footerContainer {
+    margin: 3.5rem 0;
+    
+    button {
+        color: var(--highlight);
+        font-size: 1.125rem;
+        font-weight: 600;
+        background: none;
+        border: 0;
+        cursor: pointer;
+    }
+}

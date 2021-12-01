@@ -1,0 +1,58 @@
+.imageContainer {
+    img {
+        width: 100vw;
+    }
+}
+
+.container {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.HeaderContent {
+    padding: 2rem 0;
+
+    h1 {
+        font-weight: 700;
+        font-size: 3rem;
+    }
+
+    div {
+        display: flex;
+        margin-top: 1rem;
+
+        time {
+            color: var(--info);
+            font-size: 0.875rem;
+            display: flex;
+            align-items: center;
+
+            svg {
+                margin-right: 0.3rem;
+            }
+        }
+
+        span {
+            color: var(--info);
+            font-size: 0.875rem;
+            display: flex;
+            align-items: center;
+            margin-left: 1.25rem;
+
+            svg {
+                margin-right: 0.3rem;
+            }     
+        }
+    }
+}
+
+.content {
+    margin-top: 2rem;
+    max-width: 920px;
+
+    div {
+        margin-top: 2rem;
+        text-align: justify;
+    }
+}
