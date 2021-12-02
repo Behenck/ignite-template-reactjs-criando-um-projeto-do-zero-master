@@ -13,6 +13,7 @@ import commonStyles from '../../styles/common.module.scss';
 import styles from './post.module.scss';
 import { AiOutlineCalendar, AiOutlineClockCircle, AiOutlineUser } from 'react-icons/ai';
 import { RichText } from 'prismic-dom';
+import { formatDate } from '../../utils';
 
 interface Post {
   first_publication_date: string | null;
@@ -61,7 +62,7 @@ export default function Post({ post }: PostProps) {
   return (
     <>
       <Head>
-        <title>Posts | ProjetoZero</title>
+         <title>{post.data.title} | spacetraveling</title>
       </Head>
       <Header />
       <section className={styles.imageContainer}>
@@ -123,13 +124,7 @@ export const getStaticProps = async ({params}) => {
   const response = await prismic.getByUID('posts', String(slug), {});
 
   const post = {
-        first_publication_date: format(
-          new Date(response.last_publication_date),
-          "dd LLL yyyy",
-          {
-            locale: ptBR,
-          }
-        ),
+        first_publication_date: formatDate(response.first_publication_date),
         data: {
           title: RichText.asText(response.data.title),
           banner: {

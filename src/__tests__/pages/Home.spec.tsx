@@ -92,7 +92,7 @@ describe('Home', () => {
             results: [
               {
                 uid: 'criando-um-app-cra-do-zero',
-                first_publication_date: '2021-11-01T19:27:35+0000',
+                first_publication_date: '2021-03-25T19:27:35+0000',
                 data: {
                   title: 'Criando um app CRA do zero',
                   subtitle:
@@ -133,7 +133,7 @@ describe('Home', () => {
 
     screen.getByText('Como utilizar Hooks');
     screen.getByText('Pensando em sincronização em vez de ciclos de vida');
-    screen.getByText('01 dez 2021');
+    screen.getByText('04 nov 2021');
     screen.getByText('Joseph Oliveira');
 
     screen.getByText('Criando um app CRA do zero');

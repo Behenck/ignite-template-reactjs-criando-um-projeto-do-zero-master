@@ -60,11 +60,7 @@
             }
         }
     }
-}
 
-.footerContainer {
-    margin: 3.5rem 0;
-    
     button {
         color: var(--highlight);
         font-size: 1.125rem;
@@ -72,5 +68,7 @@
         background: none;
         border: 0;
         cursor: pointer;
+
+        margin-top: 2rem;
     }
 }
